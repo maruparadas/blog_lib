@@ -1,0 +1,13 @@
+{% block avatar %}
+
+    <form method="POST" enctype="multipart/form-data">
+    
+        {% csrf_token %}
+        
+            {{form.as_p}}
+
+        <button class="btn btn-primary m-2" type="submit" >Confirmar</button>
+        
+    </form>
+ 
+{% endblock avatar %}
