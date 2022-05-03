@@ -58,5 +58,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="{% static 'app_entrega1/js/scripts.js' %}"></script>
+        {% if error %}
+            <p class="m-2" style="color: red;">{{error}}</p>
+        {% endif %}    
+        
+
     </body>
 </html>

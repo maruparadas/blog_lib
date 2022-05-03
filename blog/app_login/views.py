@@ -110,7 +110,7 @@ def cargar_avatar(request):
             return render(request, "app_login/cargar_imagen.html", {"form":formulario})
     else: 
 
-        return render(request, "app_entrega1/base.html", {"error": "El usuario no tiene permisos para realiza esta acción"})     
+        return render(request, "app_entrega1/base.html", {"error": "El usuario no es admin, no tiene permisos para realiza esta acción"})     
 
 
 
